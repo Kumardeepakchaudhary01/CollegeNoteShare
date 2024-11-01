@@ -1,0 +1,545 @@
+/* Importing google fonts link  */
+/* font-family: "Rubik", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Root styling */
+:root{
+    --bg_color:#915ee1;
+    --bg-shade:#e2d4f7;
+    --All-bg:#fafafa;
+}
+
+/* Page styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Navigation Bar styling */
+nav{
+    height: 90px;
+    background-color: var(--bg_color);
+    border-radius: 1rem;
+}
+
+nav ul{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul .GraduateLogo{
+    position: absolute;
+    left: 25px;
+    font-size: 4rem;
+    color: var(--All-bg);
+    cursor: pointer;
+}
+nav ul .GraduateLogo i{
+    rotate: -15deg;
+}
+
+nav ul .GraduateLogo i:hover{
+    scale: 1.2;
+}
+
+nav ul .searchBox{
+    width: calc(100% - 67%);
+    margin-left: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav ul .searchBox input{
+    width: calc(100% - 2px);
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius:20px 0 0 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+
+nav ul .searchBox i{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 217, 217);
+    font-size: 1.4rem;
+    border-radius: 0 20px 20px 0;
+
+}
+
+nav ul .userCredentials{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+nav ul .userCredentials img {
+    height: 65px;
+    width: 65px;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid var(--All-bg);
+}
+
+nav ul .userCredentials .userBasicData{
+    color: var(--All-bg);
+    font-family: "Rubik", sans-serif;
+}
+nav ul .userCredentials .userBasicData p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+nav ul .userCredentials .userBasicData span{
+    font-size: 1.1rem;
+}
+
+nav ul .userInfo .userDataAll{
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    background-color: var(--bg_color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul .userInfo .userDataAllShowHide{
+    display: none;
+}
+nav ul  .userInfo .userDataAll img{
+    width: 200px;
+    height: 200px;
+    border: 8px solid var(--All-bg);
+    padding: 5px;
+    border-radius: 50%;
+    align-self: center;
+}
+nav ul .userInfo .userDataAll  ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+nav ul .userInfo .userDataAll  ul li h3{
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: var(--All-bg);
+}
+#ernollmentValue{
+    font-size: 1.15rem;
+}
+
+nav ul .hemBtn{
+    display: none;
+}
+
+/* Main styling */
+main{
+    margin: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+main .sideBarContainer{
+    background-color: var(--bg_color);
+    border-radius: 1rem;
+    height: 88vh;
+    box-sizing: border-box;
+}
+main .sideBarContainer #accountBox{
+    color: var(--All-bg);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    left: 35%;
+    margin-bottom: 20px;
+    display: none;
+}
+main .sideBarContainer #RightMsg{
+    position: absolute;
+    bottom: 18px;
+    left: 33px;
+    color: var(--All-bg);
+}
+main .sideBarContainer ul{
+    width: 250px;
+    height: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+main .sideBarContainer ul li{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 1rem 0 0 1rem;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--All-bg);
+    cursor: pointer;
+}
+main .sideBarContainer ul li.active {
+    background-color: white;
+    color: black; /* Change text color for contrast */
+}
+
+main .sideBarContainer ul li:hover{
+    background-color: var(--bg-shade);
+}
+main .sideBarContainer ul li:active{
+    background-color: #fff;
+}
+
+main .sideBarContainer ul li span{
+    font-size: 1.6rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+main .sideBarContainer ul li i{
+    font-size: 1.8rem;
+    margin-right: 10px;
+    opacity: 0.9;
+}
+main .sideBarContainer ul li:hover span{
+    color: black;
+    font-size: 1.65rem;
+}
+main .sideBarContainer ul li:hover i{
+    color: black;
+    font-size: 2.1rem;
+}
+/* main Data body styling */
+main .mainDatabody{
+    margin-top: 30px;
+    margin-left:10px;
+    flex: 2;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+main .mainDatabody .dataTypeContainer{
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+main .mainDatabody .dataTypeContainer ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+main .mainDatabody .dataTypeContainer ul li{
+    max-width: 260px;
+    width: 220px;
+    height: 100%;
+    background-color: #915ee1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0 10px;
+    border-radius: 1rem;
+}
+main .mainDatabody .dataTypeContainer ul li:hover{
+    scale: 1.05;
+}
+main .mainDatabody .dataTypeContainer ul li .material-symbols-outlined{
+    font-size: 4rem;
+    
+    
+}
+main .mainDatabody .dataTypeContainer ul .dataNamecontainer h3{
+    font-size: 2rem;
+    color: var(--All-bg);
+}
+main .mainDatabody .dataTypeContainer ul .dataNamecontainer span{
+    font-size: 1.5rem;
+}
+main .mainDatabody .dataTypeContainer ul li span{
+    font-size: 2rem;
+    font-weight:500;
+    color: var(--All-bg);
+}
+main .mainDatabody .dataTypeContainer #subjectDataDropbox{
+    width: fit-content;
+    height: 40px;
+    padding: 0 5px 0 5px ;
+    font-size: 1.2rem;
+    background-color: #915ee1;
+    color: var(--All-bg);
+    font-weight: 500;
+    border-radius: 5px;
+    top: 0;
+    display: none;
+}
+main .mainDatabody .dataTypeContainer h2{
+    width: fit-content;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #915ee1;
+    color: var(--All-bg);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Data box styling */
+main .mainDatabody .dataContainer{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+main .mainDatabody .dataContainer .dataInformatin{
+    width: 100%;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: #915ee1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--All-bg);
+}
+main .mainDatabody .dataContainer .dataInformatin h2{
+    font-size: 1.7rem;
+    user-select: none;
+}
+
+main .mainDatabody .dataContainer .data{
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    
+    display: flex;
+    box-sizing: border-box;
+}
+main .mainDatabody .dataContainer .data ul{
+    min-height: fit-content;
+    max-height: 610px;
+    width: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px  solid var(--bg_color);
+    box-shadow: 5px 5px 5px var(--bg_color) ;
+}
+main .mainDatabody .dataContainer .data ul li{
+    width: 100%;
+    height: 50px;
+    background-color: #915ee1;
+    color: var(--All-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+main .mainDatabody .dataContainer .data ul li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--All-bg);
+
+}
+main .mainDatabody .dataContainer .data ul li .showDownload{
+    width: fit-content;
+    
+}
+main .mainDatabody .dataContainer .data ul li .showDownload span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 50px;
+    cursor: pointer;
+}
+main .mainDatabody .dataContainer .data ul li .showDownload span:hover{
+    scale: 1.2;
+}
+
+/* previous year data */
+main .mainDatabody .dataContainer .data .previousYearData{
+    width: 48%;
+    min-height: fit-content;
+    max-height: 610px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px  solid var(--bg_color);
+    box-shadow: 5px 5px 5px var(--bg_color) ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+@media (max-width : 900px){
+    nav ul .GraduateLogo{
+        display: none;
+    }
+    nav ul .searchBox{
+        position: absolute;
+        left: -40px;
+        width: calc(70%);
+
+    }
+    nav ul .searchBox input{
+        height: 40px;   
+    }
+    nav ul .searchBox i{
+        height: 40px;
+    }
+    nav ul .hemBtn{
+        display: block;
+        font-size: 2.35rem;
+        color: var(--All-bg);
+    }
+
+    nav ul .userCredentials{
+        display: none;
+    }
+
+    /* sideBar responsive code */
+    main .sideBarContainer{
+        width: fit-content;
+    }
+    main .sideBarContainer #RightMsg{
+        display: none;
+    }
+    main .sideBarContainer #accountBox{
+        display:inline-block ;
+        
+    }
+    main .hideShow{
+        display: none;
+    }
+    main .sideBarContainer{
+        position: absolute;
+        right: 10px;
+        height: fit-content;
+    }
+    main .sideBarContainer ul{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    main .sideBarContainer ul li{
+        height: fit-content;
+        width: fit-content;
+    }
+    main .sideBarContainer ul li:hover{
+        background-color: var(--bg_color);
+    }
+    main .sideBarContainer ul li span{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    main .sideBarContainer ul li #maths{
+        font-size: 1.25rem;
+    }
+    main .sideBarContainer ul li:hover span{
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--All-bg);
+    }
+    main .sideBarContainer ul li i{
+        display: none;
+    }
+
+    /* main body data type styling */
+    main .mainDatabody .dataTypeContainer{
+        height: 40px;
+    }
+    main .mainDatabody .dataTypeContainer ul{
+        display: none;
+    }
+    main .mainDatabody .dataTypeContainer #subjectDataDropbox{
+        display: block;
+    }
+    main .mainDatabody .dataTypeContainer h2{
+        display: block;
+    }
+    main .mainDatabody .dataContainer .dataInformatin{
+        display: none;
+    }
+    /* data box  */
+    main .mainDatabody .dataContainer .data{
+        width: 100%;
+        height: fit-content;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        flex-direction: column;
+    }
+    main .mainDatabody .dataContainer .data ul{
+        width: 100%;
+        min-height:fit-content;
+        border: 2px solid var(--bg_color);
+
+    }
+    main .mainDatabody .dataContainer .data ul li a{
+        font-size: 1rem;
+    }
+    main .mainDatabody .dataContainer .data ul li .showDownload{
+        
+        display: flex;
+    }
+    main .mainDatabody .dataContainer .data ul li .showDownload span{
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+
+    /* previous year data */
+    main .mainDatabody .dataContainer .data .previousYearData{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        max-height: 410px;
+    }
+}
